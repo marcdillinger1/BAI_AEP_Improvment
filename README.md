@@ -1,3 +1,7 @@
-# BAI_AEP_Improvment
+# Improvement Task - Anwendungsentwicklung mit Python (AEP)
 
-## Pizza Task
+## Business Artificial Intelligence (BAI) - FHNW FS 2024
+
+### Marc Dillinger
+
+### Aufgabenstellung: 
