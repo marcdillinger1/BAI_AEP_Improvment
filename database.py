@@ -27,7 +27,7 @@ def show_pizza_with_topping (topping):
 
 #Funktion um eine Pizza mit einem bestimmten Namen anzuzeigen
 
-def show_pizz_with_name (name):
+def show_pizza_with_name (name):
     for pizza in pizzas:
         if pizza.name == name:
             return pizza
