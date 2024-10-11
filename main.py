@@ -9,13 +9,44 @@ def main():
         print("5 - end application")
         choice = input("Chose Option:")
 
-        if choice == "1":
+        if choice == '1':
+            pizzas = pizza_menu()
+            print ("Pizza Menu:")
+            for pizza in pizzas:
+                print(pizza)
 
         elif choice == '2':
+            topping = input("Please enter the topping you want to search for:")
+            pizzas = show_pizza_with_topping(topping)
+            if pizzas:
+                print ("Pizzas with topping:", topping, ":")
+                for pizza in pizzas:
+                    print(pizza)
+            else:
+                print("No pizzas with specified topping")
 
         elif choice == '3':
+            name = input("Please enter the name of the pizza you want to choose:")
+            pizza = show_pizza_with_name(name)
+            if pizza:
+                print("Selected Pizza:")
+                print(pizza.pizza_informations())
+            else:
+                print("no Pizza found :(")
 
         elif choice == '4':
+            name = input("Please enter the name of the pizza you want to calculate your discounted price:")
+            pizza = show_pizza_with_name(name)
+            if pizza:
+                discount_code = input("Please enter your discount code or press enter to skip:")
+                if discount_code == "PIZZA10":
+                    discounted_price = pizza.price * 0.9
+                    print ("Discounted price:", discounted_price, "CHF")
+                else:
+                    print ("Price", pizza.price, "CHF")
+            else:
+                print("No pizza found :(")
+
 
         elif choice == '5':
             print("closing the application")
