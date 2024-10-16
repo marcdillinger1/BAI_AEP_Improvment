@@ -41,12 +41,11 @@ def main():
                 discount_code = input("Please enter your discount code or press enter to skip:")
                 if discount_code == "PIZZA10":
                     discounted_price = pizza.price * 0.9
-                    print ("Discounted price:", discounted_price, "CHF")
+                    print(f"Discounted price: {discounted_price:.2f} CHF")
                 else:
-                    print ("Price", pizza.price, "CHF")
+                    print(f"Price: {pizza.price:.2f} CHF")
             else:
                 print("No pizza found :(")
-
 
         elif choice == '5':
             print("closing the application")
@@ -54,7 +53,6 @@ def main():
 
         else:
             print("Invalid choice, please try again.")
-
 
 if __name__ == "__main__":
     main()

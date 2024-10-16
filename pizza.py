@@ -9,7 +9,7 @@ class Pizza:
 
 #Funktion Informationen der Pizza anzeigen
     def pizza_informations(self):
-        return self.name + " - " + ", ".join(self.topping) + " - " + str(self.price) + " CHF"
+        return f"{self.name} - {', '.join(self.topping)} - {self.price:.2f} CHF"
 
 #Funktion überprüfen der Pizzen nach Toppings
 
