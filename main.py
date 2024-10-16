@@ -16,7 +16,7 @@ def main():
                 print(pizza)
 
         elif choice == '2':
-            topping = input("Please enter the topping you want to search for:")
+            topping = input("Please enter the topping you want to search for:").lower()
             pizzas = show_pizza_with_topping(topping)
             if pizzas:
                 print ("Pizzas with topping:", topping, ":")
@@ -26,7 +26,7 @@ def main():
                 print("No pizzas with specified topping")
 
         elif choice == '3':
-            name = input("Please enter the name of the pizza you want to choose:")
+            name = input("Please enter the name of the pizza you want to choose:").lower()
             pizza = show_pizza_with_name(name)
             if pizza:
                 print("Selected Pizza:")
@@ -35,7 +35,7 @@ def main():
                 print("no Pizza found :(")
 
         elif choice == '4':
-            name = input("Please enter the name of the pizza you want to calculate your discounted price:")
+            name = input("Please enter the name of the pizza you want to calculate your discounted price:").lower()
             pizza = show_pizza_with_name(name)
             if pizza:
                 discount_code = input("Please enter your discount code or press enter to skip:")
