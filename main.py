@@ -1,9 +1,9 @@
-from database import pizza_menu, show_pizza_with_topping, show_pizza_with_name
+from database import pizza_menu, show_pizza_with_toppings, show_pizza_with_name
 
 def main():
     while True:
         print("1 - show pizza menu")
-        print("2 - show pizzas with a specific topping")
+        print("2 - search pizzas with specific topping(s)")
         print("3 - chose a pizza by name")
         print("4 - use discount code")
         print("5 - end application")
@@ -16,10 +16,10 @@ def main():
                 print(pizza)
 
         elif choice == '2':
-            topping = input("Please enter the topping you want to search for:").lower()
-            pizzas = show_pizza_with_topping(topping)
+            topping = input("Please enter the topping(s) you want to search for (please seperate toppings with , ):").lower()
+            pizzas = show_pizza_with_toppings(topping)
             if pizzas:
-                print ("Pizzas with topping:", topping, ":")
+                print ("Pizzas with topping(s):", topping, ":")
                 for pizza in pizzas:
                     print(pizza)
             else:

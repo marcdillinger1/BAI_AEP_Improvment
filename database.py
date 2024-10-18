@@ -1,7 +1,5 @@
 from pizza import Pizza
 
-#Alle verfügbaren Pizzen aufgelistet (Datenbank)
-
 pizzas = [
     Pizza("margherita", ["tomato", "mozzarella"], 10.00),
     Pizza("hawaii", ["tomato", "mozzarella", "pineapple", "ham"], 14.00),
@@ -22,8 +20,10 @@ def pizza_menu():
 
 #Funktion um Pizzen mit bestimmten Toppings anzuzeigen
 
-def show_pizza_with_topping (topping):
-    return [pizza.pizza_informations() for pizza in pizzas if pizza.has_topping(topping)]
+def show_pizza_with_toppings (toppings):
+    topping_list = toppings.split(",")
+    topping_list = [topping.strip().lower() for topping in topping_list]
+    return [pizza.pizza_informations() for pizza in pizzas if all(topping in pizza.toppings for topping in topping_list)]
 
 #Funktion um eine Pizza mit einem bestimmten Namen anzuzeigen
 
