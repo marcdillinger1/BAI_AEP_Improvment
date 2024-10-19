@@ -50,7 +50,7 @@ def main():
             # falls keine Pizzen mit den bestimmten Toppings gefunden wurden
             else:
                 # Benachrichtigung an User das keine Pizzen mit den bestimmten Toppings gefunden wurden
-                print("No pizzas with specified topping found")
+                print("No pizzas with specified topping(s) found")
 
         # Option 3 - Auswählen einer bestimmten Pizza nach Namen
         elif choice == '3':
