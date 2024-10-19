@@ -63,6 +63,6 @@ Die Python-Applikation ist in 3 Files aufgeteilt welche alle ihren eigenen Zweck
 
 `main.py` - Sorgt für die Benutzeroberfläche und die Ausführung des Programmes
 
-`database.py` - agiert als Datenbank und beinhaltet die Liste aller Pizza-Objekte und deren Informationen (Name, Toppings und Preis) inklusive wichtiger Funktionen wie `pizza_menu` zum anzeigen des Pizza Menu, `show_pizza_with_toppings` zum Suchen von Pizzen mit bestimmten Topping(s) und `show_pizza_with_name` um Pizzen anhand des namens anzeigen zu können
+`database.py` - agiert als Datenbank und beinhaltet die Liste aller Pizza-Objekte und deren Informationen (Name, Toppings und Preis) inklusive wichtiger Funktionen wie `pizza_menu` zum anzeigen des Pizza Menu, `show_pizza_with_toppings` zum Suchen von Pizzen mit bestimmten Topping(s) und `show_pizza_with_name` um Pizzen anhand des Namens anzeigen zu können
 
 `pizza.py` - beinhaltet den Konstruktor der Pizza Klasse und die Funktion `pizza_informations` welche dafür sorgt die Informationen der Pizzen anzeigen zu können
