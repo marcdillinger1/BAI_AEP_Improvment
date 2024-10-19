@@ -4,7 +4,7 @@ def main():
     while True:
         print("1 - show pizza menu")
         print("2 - search pizzas with specific topping(s)")
-        print("3 - chose a pizza by name")
+        print("3 - select a pizza by name")
         print("4 - use discount code")
         print("5 - end application")
         choice = input("Chose Option:")
@@ -23,10 +23,10 @@ def main():
                 for pizza in pizzas:
                     print(pizza)
             else:
-                print("No pizzas with specified topping")
+                print("No pizzas with specified topping found")
 
         elif choice == '3':
-            name = input("Please enter the name of the pizza you want to choose:").lower()
+            name = input("Please enter the name of the pizza you want to select:").lower()
             pizza = show_pizza_with_name(name)
             if pizza:
                 print("Selected Pizza:")
@@ -41,14 +41,16 @@ def main():
                 discount_code = input("Please enter your discount code or press enter to skip:")
                 if discount_code == "PIZZA10":
                     discounted_price = pizza.price * 0.9
+                    print("Discount code successfully applied")
                     print(f"Discounted price: {discounted_price:.2f} CHF")
                 else:
+                    print("None or invalid discount code")
                     print(f"Price: {pizza.price:.2f} CHF")
             else:
                 print("No pizza found :(")
 
         elif choice == '5':
-            print("closing the application")
+            print("Closing the application")
             break
 
         else:
