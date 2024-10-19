@@ -10,7 +10,7 @@ class Pizza:
         self.price = price
 
     # Funktion die Informationen der Pizza als formatierten string zurückgibt mit:
-    # dem Namen der Pizza
+    # Dem Namen der Pizza
     # einer Liste der Toppings getrennt durch ein Komma
     # der Preis der Pizza formatiert mit 2 Nachkommastellen (.2f) und der Währung CHF
     def pizza_informations(self):

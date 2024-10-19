@@ -1,10 +1,10 @@
 # Importiert die Funktionen aus database.py
-# pizza_menu - Funktion zum anzeigen des gesamten Pizza Menu
+# pizza_menu - Funktion zum Anzeigen des gesamten Pizza Menu
 # show_pizza_with_toppings - Funktion um Pizzen mit bestimmten Toppings anzuzeigen
 # show_pizza_with_name - Funktion zur Suche einer bestimmten Pizza anhand des Namens
 from database import pizza_menu, show_pizza_with_toppings, show_pizza_with_name
 
-# Hauptfunktion der Appliaktion welche die Benutzeroberfläche steuert
+# Hauptfunktion der Applikation welche die Benutzeroberfläche steuert
 def main():
     # Endlosschleife um das Hauptmenü anzuzeigen bis der User die Anwendung beendet
     while True:
@@ -26,8 +26,8 @@ def main():
             # ruft die Funktion pizza_menu auf, um das gesamte Pizza Menu zu erhalten
             pizzas = pizza_menu()
             # gibt den Titel Pizza Menu aus
-            print ("Pizza Menu:")
-            # durchläuft jedes Pizza Objekt in der Pizza Liste
+            print("Pizza Menu:")
+            # durchläuft jedes Pizza-Objekt in der Pizza Liste
             for pizza in pizzas:
                 # gibt jede Pizza mit ihren Informationen aus im Pizza Menu
                 print(pizza)
@@ -42,7 +42,7 @@ def main():
             # falls Pizzen mit den bestimmten Toppings gefunden wurden
             if pizzas:
                 # Benachrichtigung, dass Pizzen mit den bestimmten Toppings gefunden wurden
-                print ("Pizzas with topping(s):", topping, ":")
+                print("Pizzas with topping(s):", topping, ":")
                 # geht alle gefundenen Pizzen welche die bestimmten Toppings enthalten durch
                 for pizza in pizzas:
                     # zeigt alle gefundenen Pizzen mit ihren Informationen dem User an
@@ -83,7 +83,7 @@ def main():
                 discount_code = input("Please enter your discount code or press enter to skip:")
                 # falls der Discount Code gültig ist (PIZZA10)
                 if discount_code == "PIZZA10":
-                    # berechnet den reduzierten preis welcher 90% vom ursprünglichen pizza.price beträgt (10% Rabatt)
+                    # berechnet den reduzierten preis welcher 90 % vom ursprünglichen pizza.price beträgt (10 % Rabatt)
                     discounted_price = pizza.price * 0.9
                     # Benachrichtigung an den User, dass der Rabattcode erfolgreich angewendet wurde
                     print("Discount code successfully applied")
@@ -109,7 +109,7 @@ def main():
 
         # Ungültige Eingabeoption
         else:
-            # Benachrichtigung an den User dass seine Eingabe ungültig war und er es nochmals versuchen soll
+            # Benachrichtigung an den User, dass seine Eingabe ungültig war und er es nochmals versuchen soll
             print("Invalid choice, please try again.")
 
 if __name__ == "__main__":

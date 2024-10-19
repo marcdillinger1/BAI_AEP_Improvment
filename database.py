@@ -17,8 +17,8 @@ pizzas = [
 ]
 
 # Funktion um das gesamte Pizza-Menu anzuzeigen
-# zeigt alle Pizzen in einer Liste formatierter strings an
-# indem die Methode pizza_informations aus pizza.py für jedes Pizza Objekt angewendet wird
+# zeigt alle Pizzen in einer Liste formatierter strings an,
+# indem die Methode pizza_informations aus pizza.py für jedes Pizza-Objekt angewendet wird
 def pizza_menu():
     return [pizza.pizza_informations() for pizza in pizzas]
 
@@ -35,9 +35,9 @@ def show_pizza_with_toppings (toppings):
 
 # Funktion zur Suche einer bestimmten Pizza anhand des Namens
 def show_pizza_with_name (name):
-    # Durchsucht jedes Pizza Objekt in der Liste Pizzas
+    # Durchsucht jedes Pizza-Objekt in der Liste Pizzas
     for pizza in pizzas:
-        # prüft, ob die Namen der gesuchten Pizza und dem Pizza Objekt übereinstimmen
+        # prüft, ob die Namen der gesuchten Pizza und dem Pizza-Objekt übereinstimmen
         if pizza.name == name:
             # gibt die Pizza zurück, wenn die Namen übereinstimmen
             return pizza
