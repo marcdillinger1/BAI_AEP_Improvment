@@ -45,7 +45,7 @@ def main():
                     print(f"Discounted price: {discounted_price:.2f} CHF")
                 else:
                     print("None or invalid discount code")
-                    print(f"Price: {pizza.price:.2f} CHF")
+                    print(f"Regular price: {pizza.price:.2f} CHF")
             else:
                 print("No pizza found :(")
 
