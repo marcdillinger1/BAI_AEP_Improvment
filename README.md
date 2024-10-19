@@ -53,7 +53,7 @@ Der User hat 5 Optionen, welche es ihm ermöglichen, die geforderten Aktionen au
 
 3. select a pizza by name - zum Auswählen einer Pizza durch Eingabe des Namens
 
-4. apply discount code / calculate price - zum Anwenden eines Rabattcodes und der berechnung des Preises einer bestimmten Pizza
+4. apply discount code / calculate price - zum Anwenden eines Rabattcodes und der berechnung des Preises einer ausgewählten Pizza
 
 5. end application - zum beenden der Applikation
 
